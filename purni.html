@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="chor.css">
+<body>
+
+<table border="1">
+    <tr>
+        <th>Heading </th>
+        <th>HEading 2</th>
+    </tr>
+    <tr>
+        <td> row1,cell1</td>
+        <td>row1,cell2</td>
+    
+    </tr>
+    <tr> <td>row2,cell1</td>
+    <td>row2,cell2</td></tr>
+
+</table>
+<br>
+<table border="2">
+    <tr>
+        <th> Name</th>
+        <td>purni</td>
+    </tr>
+    <tr>
+        <th rowspan="2">mobile no</th>
+        <td>9841123436</td>
+    </tr>
+    <tr>
+        <td>9851213244</td>
+    </tr>
+</table>
+<table style="width: 100%;", border="2">
+    <tr>
+        <th>name </th>
+        <th colspan="2">mobile no</th>
+    </tr>
+    <tr>
+        <td> purni chor</td>
+        <td>980808080</td>
+        <td>966666666</td>
+    
+    </tr>
+
+</table>
+<br>
+<table>
+    <thead >
+        <tr>
+            <th> sub</th>
+            <th>marks</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>maths</td>
+            <td>87</td>
+        </tr>
+        <tr>
+            <td>english</td>
+            <td>98</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>total</td>
+            <td>198</td>
+        </tr>
+    </tfoot>
+</table>
+<br>
+<h2>HTML Iframe example</h2>
+<p>use the hight and width attribute to specify the size of the iframe:</p>
+<iframe src="https://deadshot.io/" height="500" width="700"></iframe>
+<br>
+<form>
+    <label for="fname">First Name</label>
+    <input type="text" name="purni"id="fname"/><br/>
+    Last NAme: <input type="text" name="chor"/><br/>
+Enter your address:<br>
+<textarea rows="2" cols="20"></textarea>
+</form>
+<p>select location</p>
+<select id="location" multiple>
+<option value="ktm" selected>Kathmandu</option>
+<option value="bkt">bhaktapur</option>
+<option value="pok">pokhara</option>
+<option value="patan">Patan</option>
+<input type="hidden">
+<br>
+<label>Enter password</label><br>
+<input type="password" name="password"><br>
+<br><input type="submit" value="submit"><br>
+<label for="myfile">Select file</label><br>
+<input type="file" id="myfile" name="myfile" multiple><br><br>
+<button name="button" value="OK" type="submit">submit</button>
+<button name="button" value="OK" type="reset">reset</button>
+</select><br>
+<button name="button" value="OK" type="submit" onclick="hello()">Click here</button>
+<script>
+    function hello(){
+    alert("hello purni chor")}
+</script>
+<form>
+
+<input type="submit" value="submit">
+<input type="reset" value="reset"><br>
+<label for="gendr"> Gender:</label><br>
+<input type="radio" id="gender" name="gender" value="male"/>Male<br>
+<input type="radio" id="gender" name="gender" value="female"/>Female<br>
+<input type="radio" id="gender" name="gender" value="others"/>others/shristi<br>
+<img src="C:\Users\Student\Desktop\purni\shr.png" height="50%"><br>
+Hobby:<br>
+<input type="checkbox" id="football" name="footbal" value="football"/>
+<label for="football">Football</label><br>
+<input type="checkbox" id="chess" name="chess" value="chess"/>
+<label for="chess">chess</label><br>
+<input type="checkbox" id="basketball" name="basketball" value="basketball"/>
+<label for="basketball">basketball</label><br>
+<fieldset> 
+    <legend>User info</legend>
+    <label for="fname">First Name</label>
+    <input type="text" name="purni"id="fname"/><br/>
+    Last NAme: <input type="text" name="chor"/><br/>
+    <label>Enter password</label><br>
+<input type="password" name="password"><br>
+Hobby:<br>
+<input type="checkbox" id="football" name="footbal" value="football"/>
+<label for="football">Football</label><br>
+<input type="checkbox" id="chess" name="chess" value="chess"/>
+<label for="chess">chess</label><br>
+<input type="checkbox" id="basketball" name="basketball" value="basketball"/>
+<label for="basketball">basketball</label><br>
+<button name="button" value="OK" type="submit" onclick="hello()">Click here</button>
+<script>
+    function hello(){
+    alert("hello purni chor")}
+</script>
+</fieldset>
+<label for="cars">Choose a car:</label><br>
+<select name="cars" id="cars">
+    <optgroup label="lamborgini">
+        <option value="spider">spider</option>
+        <option value="urus">urus</option>
+    </optgroup>
+    <optgroup label="GT">
+        <option value="GT v4">GT v4</option>
+        <option value="GT v8">GT v8</option>
+    </optgroup>
+</select>
+</form>
+<audio> element - MP3,WAV, and OGG</audio>
+<audio controls>
+    <source src="C:\Users\Student\Desktop\purni\Sushant KC - Bardali ft. Indrakala Rai (Official Music Video).mp3" type="audio/mpeg"> 
+</audio>
+<video width="700" height="600" controls>
+    <source src="C:\Users\Student\Desktop\purni\Sushant KC - Bardali ft. Indrakala Rai (Official Music Video).mp4" type="video/mp4">
+</video>
+<canvas id="myCanvas"> You browser does not support the HTML5 canvas.tag </canvas>
+<script>
+    var c = document.getElementById("mycanvas");
+    var ctx =c.getContext("2d"); ctx.fillStyle='#FFoooo';
+    ctx.fillRect(0,0,150,150)
+</script>
+<p>purniii chorrrrni</p>
+</body>
+</html>
