@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script src="java.js"></script>
+    <h2>
+        What can JavaScript do?
+    </h2>
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me</button>
+    
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+   
+    <button onclick="document.getElementById('myImage').src='https://5.imimg.com/data5/WL/SG/MY-8835990/10w-gls-light-bulb-500x500.jpg'">Turn on the light</button>
+
+   
+    <img id="myImage" src="https://c8.alamy.com/comp/2A5C5XA/vector-3d-realistic-golden-off-light-bulb-icon-closeup-isolated-on-white-background-design-template-clipart-glowing-incandescent-filament-lamps-2A5C5XA.jpg" style="width: 100px;">
+
+    
+    <button onclick="document.getElementById('myImage').src='https://c8.alamy.com/comp/2A5C5XA/vector-3d-realistic-golden-off-light-bulb-icon-closeup-isolated-on-white-background-design-template-clipart-glowing-incandescent-filament-lamps-2A5C5XA.jpg'">Turn off the light</button>
+    <br>
+    <h2>Using external js</h2>
+    <p id="demo1">A pargraph</p>
+    <button type="button" onclick="myFunction()">click</button>
+
+</body>
+</html>
