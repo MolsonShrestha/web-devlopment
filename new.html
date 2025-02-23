@@ -23,5 +23,21 @@
     <p id="demo1">A pargraph</p>
     <button type="button" onclick="myFunction()">click</button>
 
+    <br>
+<script type="text/javascript"> function show_alert()
+{alert("i am alert box!")}</script>
+<input type="button" onclick="show_alert()" value="Show alert box">
+<br>
+<br>
+<script type="text/javascript">
+    function show_confirm()
+    {
+        var r=confirm("Press");
+        if(r==true){document.write("you pressed OK!");}
+        else{document.write("u pressed cancle");}
+    }
+</script>
+<input type="button" onclick="show_confirm()" value="press here">
+
 </body>
 </html>
