@@ -38,6 +38,75 @@
     }
 </script>
 <input type="button" onclick="show_confirm()" value="press here">
-
+<br>
+<script type="text/javascript">
+    x=true;
+    document.write(Number(x)+"<br>");
+    x=false;
+    document.write(Number(x)+"<br>");
+    x="10";
+    document.write(Number(x)+"<br>");
+    x="10 20";
+    document.write(Number(x)+"<br>");
+    document.write(parseInt("12")+"<br>");
+    document.write(parseInt("126")+"<br>");
+    document.write(parseInt("12 years")+"<br>");
+</script>
+<p id="demo5"></p>
+<script>
+    var x= 9.656;
+    document.getElementById("demo5").innerHTML=
+    x.toExponential()+"<br>"+
+    x.toExponential(2)+"<br>"+ 
+    x.toExponential(4)+"<br>"+
+    x.toExponential(6);
+</script>
+<script type="text/javascript">
+    var num=new Number(15);
+    document.write("num.toString() is:" + num.toString() + "<br>");
+    document.write("num.toString(2) is:" + num.toString(2) + "<br>");
+    document.write("num.toString(4) is:" + num.toString(4) + "<br>");
+</script>
+<p id="demo6"></p>
+<script>
+    var x= 9.656;
+    document.getElementById("demo6").innerHTML=
+    x.toFixed(0)+ "<br>"+
+    x.toPrecision()+ "<br>"+
+    x.toFixed(2)+"<br>"+
+    x.toPrecision(2)+ "<br>"+
+    x.toFixed(4)+ "<br>"+
+    x.toPrecision(4)+ "<br>"+
+    x.toFixed(6)+ "<br>"+
+    x.toPrecision(6);
+    var b1= Boolean(100);
+    var b2= Boolean(3.14);
+    var b3= Boolean(-100);
+    var b4= Boolean("hello");
+    var b5= Boolean("false");
+    var b6= Boolean(1+2+3+4.5);
+    document.getElementById("demo6").innerHTML="100 is "+b1+"<br>"+
+    "3.14 is "+b2+"<br>"+
+    "-100 is "+b3+"<br>"+
+    "Any (non empty) string is "+b4+"<br>"+
+    "Even the string 'false' is "+b5+"<br>"+
+    "any expression is "+b6; 
+    </script><br>
+    <p id="demo9"></p>
+    <script>
+        var str= "molson is the best student"
+        var n= str.search(/best/i);
+        document.getElementById("demo9").innerHTML=n;
+    </script>
+    <button onclick="myFunction()">click to replace</button>
+    <p id="demo8">the quick brown fox jumps over the lazy dog so therefore fox is quick and doge is not quick</p>
+    <script>
+        function myFunction()
+        {
+            var str= document.getElementById("demo8").innerHTML;
+            var txt= str.replace(/quick/i,"slow");
+        document.getElementById("demo8").innerHTML=txt;
+            }
+    </script>
 </body>
 </html>
