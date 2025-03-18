@@ -125,5 +125,75 @@
      }
       
     </script>
+    <p id="demon"></p>
+    <script>
+        var txt="";
+        var person={fname:"john",lname:"doe",age:25};
+        var x;
+        for(x in person){
+            txt+=person[x]+" ";
+        }
+        document.getElementById("demon").innerHTML=txt;
+    </script>
+    <script>
+        var cars=["BMW","Volvo","Saab","Ford"];
+        var x;
+        for(x of cars){
+            document.write(x+"<br>");
+        }
+    </script>
+  <p>Please input a num betw 5 and 10</p>
+  <input id="numb" type="text">
+  <button onclick="myFunction()">text input</button>
+  <p id="p01"></p>
+  <script>
+      function myFunction() {
+          var message, x;
+          message = document.getElementById("p01");
+          message.innerHTML = "";
+          x = document.getElementById("numb").value;
+          try {
+              if (x == "") throw "empty";
+              if (isNaN(x)) throw "not a number";
+              x = Number(x);
+              if (x < 5) throw "too low";
+              if (x > 10) throw "too high";
+              message.innerHTML = "Input is valid: " + x; // Optional: display valid input
+          } catch (err) {
+              message.innerHTML = "Input is " + err;
+          } finally {
+              document.getElementById("numb").value = "";
+          }
+      }
+  </script>
+  <script>
+    function validateForm(){
+        var x=document.forms["myForm"]["fname"].value;
+        if(x==""){
+            alert("Name must be filled out");
+            return false;
+        }
+
+    }
+  </script>
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fname">
+    <input type="submit" value="Submit">
+    <br>
+     <script type="text/javascript">
+        function myFunction() {
+            var v = document.getElementById("elem").value;
+           if(v_match(patt))
+           {alart("valid");}
+           else{alert("invalid");
+            document.getElementById("elem").value="";
+            document.getElementById("elem").focus();
+           }
+        }
+        </script>
+        <form>
+            Required Field: <input type="text" id="elem">
+            <input type="button" onclick="validate()" value="check">
+        </form>
 </body>
 </html>
